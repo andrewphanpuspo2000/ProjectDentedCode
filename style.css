@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+}
+/* styling for global */
+.global {
+  background-color: red;
+  color: white;
+  padding: 0.8rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* styling for headerpage */
+.wrap {
+  color: white;
+  background-color: blue;
+}
+.head {
+  width: 80%;
+  margin: auto;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-left: 1rem;
+  list-style: none;
+  font-size: 1rem;
+}
+header ul li:hover {
+  font-size: 1.3rem;
+}
+/* hero styling */
+
+.hero {
+  color: yellow;
+  margin: 0;
+  background-image: url("./jeremy-thomas-E0AHdsENmDg-unsplash.jpg");
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 4rem;
+  width: 450px;
+  background-color: gray;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+.hero .main > p {
+  font-weight: bold;
+}
+
+/* mainContent styling */
+
+.contentBlock {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.containerContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.containerContent img {
+  width: 150px;
+  height: 100px;
+}
+.containerContent article {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 70vm;
+}
+.containerContent button {
+  align-self: end;
+}
+.country {
+  background: greenyellow;
+  padding: 2rem;
+  height: auto;
+}
+.aside {
+  margin-left: 80px;
+}
+.year {
+  background-color: yellow;
+  padding: 2rem;
+  margin-top: 10px;
+}
+.containerContent article button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+/* styling for recommendation destination */
+.recommendationBlock {
+  background-color: yellowgreen;
+  padding: 50px;
+}
+
+.recommendContain {
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.recommendationBlock .content {
+  background-color: white;
+  margin-top: 0;
+}
+.recommendationBlock article {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  box-shadow: 0 0 10px;
+  margin-left: 50px;
+}
+
+.recommendationBlock .content {
+  padding: 20px;
+}
+.recommendationBlock button {
+  color: white;
+  background-color: red;
+  width: 90%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
