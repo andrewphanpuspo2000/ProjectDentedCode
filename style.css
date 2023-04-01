@@ -109,6 +109,7 @@ header ul li:hover {
 .recommendationBlock {
   background-color: yellowgreen;
   padding: 50px;
+  margin-top: 40px;
 }
 
 .recommendContain {
@@ -140,4 +141,24 @@ header ul li:hover {
   border: none;
   padding: 10px;
   border-radius: 10px;
+}
+/* subscribe styling */
+.subscribeContain {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.subscribeContain button {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
 }
