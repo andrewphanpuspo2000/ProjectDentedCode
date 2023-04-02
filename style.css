@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -80,9 +84,11 @@ header ul li:hover {
   padding-left: 100px;
   padding-right: 100px;
 }
-.containerContent {
+.contentBlock .containerContent {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 .containerContent img {
   width: 150px;
@@ -92,21 +98,25 @@ header ul li:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
-  width: 70vm;
+  width: 500px;
   box-shadow: 0 0 10px;
   margin-top: 15px;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  flex-grow: 1;
 }
 .containerContent button {
   align-self: end;
 }
-.country {
+.contentBlock .country {
   background: greenyellow;
   padding: 2rem;
   height: auto;
+  width: 100%;
 }
-.aside {
-  margin-left: 80px;
+.contentBlock .aside {
+  margin-left: 20px;
+  width: 30%;
 }
 .year {
   background-color: yellow;
@@ -118,6 +128,10 @@ header ul li:hover {
   color: white;
   border: none;
   padding: 10px;
+}
+.contentBlock .articleUpdate {
+  display: flex;
+  flex-direction: column;
 }
 /* styling for recommendation destination */
 .recommendationBlock {
@@ -134,7 +148,6 @@ header ul li:hover {
 }
 
 .recommendationBlock .content {
-  background-color: white;
   margin-top: 0;
 }
 .recommendationBlock article {
@@ -143,15 +156,21 @@ header ul li:hover {
   width: 25%;
   box-shadow: 0 0 10px;
   margin-left: 50px;
+  border-radius: 10px;
+  background-color: white;
+  flex-grow: 1;
 }
-
+.recommendationBlock img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
 .recommendationBlock .content {
   padding: 20px;
 }
 .recommendationBlock button {
   color: white;
   background-color: red;
-  width: 90%;
+  width: 100%;
   border: none;
   padding: 10px;
   border-radius: 10px;
@@ -163,16 +182,23 @@ header ul li:hover {
 
   align-items: center;
 }
+.subscribeContain input {
+  line-height: 2rem;
+}
 .subscribeContain button {
   padding-left: 8px;
   padding-right: 8px;
   background-color: red;
   color: white;
   border: none;
+  line-height: 2rem;
 }
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: black;
   color: white;
+  margin-top: 10px;
 }
