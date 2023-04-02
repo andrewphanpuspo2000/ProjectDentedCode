@@ -1,0 +1,41 @@
+.PostContainer article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 10px;
+  padding: 20px;
+}
+.aside .asideCountry {
+  /* width: 50%; */
+  box-shadow: 0 0 10px;
+}
+
+.aside .asideYear {
+  box-shadow: 0 0 10px;
+}
+
+.containerAll {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+button {
+  align-self: flex-end;
+}
+@media (max-width: 700px) {
+  .containerAll {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

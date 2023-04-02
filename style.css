@@ -202,3 +202,18 @@ footer {
   color: white;
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  .containerContent article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .contentBlock .containerContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+}
