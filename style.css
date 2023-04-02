@@ -81,8 +81,8 @@ header ul li:hover {
 /* mainContent styling */
 
 .contentBlock {
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
 }
 .contentBlock .containerContent {
   display: flex;
@@ -114,8 +114,8 @@ header ul li:hover {
   height: auto;
 }
 .contentBlock .aside {
-  margin-left: 20px;
-  width: 30%;
+  /* margin-left: 20px; */
+  /* width: 30%; */
 }
 .year {
   background-color: yellow;
@@ -201,7 +201,21 @@ footer {
   color: white;
   margin-top: 10px;
 }
-
+@media (max-width: 400px) {
+  .contentBlock .containerContent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main {
+    margin: 40px;
+  }
+  .recommendContain article {
+    width: auto;
+  }
+  .recommendationBlock img {
+    width: 100%;
+  }
+}
 @media (max-width: 700px) {
   .containerContent article {
     display: flex;
