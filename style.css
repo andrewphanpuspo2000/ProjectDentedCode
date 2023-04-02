@@ -112,7 +112,6 @@ header ul li:hover {
   background: greenyellow;
   padding: 2rem;
   height: auto;
-  width: 100%;
 }
 .contentBlock .aside {
   margin-left: 20px;
@@ -203,7 +202,7 @@ footer {
   margin-top: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .containerContent article {
     display: flex;
     flex-direction: column;
@@ -211,9 +210,15 @@ footer {
   }
   .contentBlock .containerContent {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+
     /* justify-content: space-between; */
+  }
+  .aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100% !important;
   }
 }
