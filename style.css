@@ -98,7 +98,7 @@ header ul li:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
-  width: 500px;
+
   box-shadow: 0 0 10px;
   margin-top: 15px;
   padding: 10px;
